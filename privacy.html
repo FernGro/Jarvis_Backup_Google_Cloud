@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Datenschutzhinweise für die private Google Drive OAuth-Anwendung JARVIS Backup.">
+  <title>Datenschutzerklärung – JARVIS Backup</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <nav aria-label="Hauptnavigation">
+    <a class="brand" href="./">JARVIS / BACKUP</a>
+    <div class="links"><a href="./">Überblick</a><a href="privacy.html" aria-current="page">Datenschutz</a><a href="terms.html">Nutzungsbedingungen</a></div>
+  </nav>
+  <main>
+    <div class="eyebrow">Stand: 11. November 2026</div>
+    <h1>Datenschutzerklärung</h1>
+    <p class="lead">Diese Hinweise beschreiben die Verarbeitung von Google-Nutzerdaten durch die private Anwendung „JARVIS Backup“ sowie die öffentliche Informationsseite.</p>
+
+    <h2>1. Betreiber und Kontakt</h2>
+    <p>JARVIS Backup wird von einer Privatperson für die Sicherung der eigenen IT-Infrastruktur betrieben. Die Anwendung wird nicht Dritten als Dienst angeboten. Kontakt zum Projektbetreiber ist über das <a href="https://github.com/FernGro">GitHub-Profil FernGro</a> möglich. Die öffentliche Website enthält bewusst keine privaten Adressen oder Zugangsdaten.</p>
+
+    <h2>2. Zweck und Google-Drive-Zugriff</h2>
+    <p>JARVIS Backup verwendet die Google-Drive-API über rclone ausschließlich dazu, Sicherungsdateien im Google-Drive-Konto des Betreibers abzulegen, aufzulisten, zu überprüfen und bei Bedarf für Wiederherstellungen abzurufen. Soweit durch den tatsächlich erteilten OAuth-Berechtigungsumfang erlaubt, können Sicherungsdateien auch verwaltet oder gelöscht werden, etwa bei einer ausdrücklich vorgenommenen Aufbewahrungsbereinigung. Maßgeblich ist der beim Google-Anmeldedialog angezeigte Berechtigungsumfang.</p>
+    <p>Die Anwendung verwendet Google-Nutzerdaten nicht für Werbung, personalisierte Profile oder den Weiterverkauf. Eine Übermittlung an externe KI-Modelle erfolgt durch diese Backup-Konfiguration nicht.</p>
+
+    <h2>3. Speicherung, Verschlüsselung und Weitergabe</h2>
+    <p>rclone speichert die für die Autorisierung erforderlichen OAuth-Zugangsinformationen lokal auf dem vom Betreiber verwalteten Backup-Server. Es werden keine OAuth-Tokens in diesem öffentlichen Repository oder auf dieser Website bereitgestellt.</p>
+    <p>Die Sicherungsdaten werden mittels Restic auf dem Server verschlüsselt, bevor sie an Google Drive übertragen werden. Google speichert die verschlüsselten Sicherungsdateien im Konto des Betreibers. Die Entschlüsselungsschlüssel werden nicht zur Website übertragen. Google ist als Anbieter des Speicherdienstes in die Verarbeitung eingebunden; für GitHub Pages als Webhosting gelten die eigenen Datenschutzinformationen von GitHub.</p>
+
+    <h2>4. Aufbewahrung und Löschung</h2>
+    <p>Verschlüsselte Backup-Dateien verbleiben im Google-Drive-Konto, bis der Betreiber sie im Rahmen seiner Aufbewahrungs- und Wiederherstellungsprozesse löscht. OAuth-Tokens können durch die Entfernung der Anwendung aus dem Google-Konto widerrufen und aus der lokalen rclone-Konfiguration entfernt werden. Die Entfernung einer OAuth-Freigabe löscht bereits gespeicherte Sicherungsdateien nicht automatisch.</p>
+
+    <h2>5. Rechte und Kontrolle</h2>
+    <p>Die Nutzung ist auf das eigene Google-Konto des Betreibers beschränkt. Zugriffsberechtigungen können jederzeit in den <a href="https://myaccount.google.com/connections">Google-Kontoeinstellungen</a> eingesehen und widerrufen werden. Der Betreiber kann eigene Sicherungsdateien selbst aus Google Drive entfernen. Für Rückfragen steht der oben genannte Kontakt zur Verfügung.</p>
+
+    <h2>6. Diese öffentliche Website</h2>
+    <p>Diese statische Informationsseite setzt selbst keine Analyse-Cookies und verwendet keine clientseitigen Tracking-Skripte. Beim Abruf können durch den Hostinganbieter GitHub technische Zugriffsdaten (beispielsweise IP-Adresse und Browserinformationen) gemäß dessen eigenen Richtlinien verarbeitet werden. Weitere Informationen: <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub-Datenschutzerklärung</a>.</p>
+
+    <h2>7. Änderungen</h2>
+    <p>Bei Änderungen der Datenverarbeitung oder des OAuth-Berechtigungsumfangs werden diese Informationen aktualisiert.</p>
+  </main>
+  <footer><a href="./">Startseite</a><a href="terms.html">Nutzungsbedingungen</a><a href="https://github.com/FernGro">Kontakt</a></footer>
+</div>
+</body>
+</html>
