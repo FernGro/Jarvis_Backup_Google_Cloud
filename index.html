@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="JARVIS Backup: privates, verschlüsseltes Offsite-Backup mit Restic, rclone und Google Drive.">
+  <title>JARVIS Backup – Private verschlüsselte Datensicherung</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <nav aria-label="Hauptnavigation">
+      <a class="brand" href="./">JARVIS / BACKUP</a>
+      <div class="links">
+        <a href="./" aria-current="page">Überblick</a>
+        <a href="privacy.html">Datenschutz</a>
+        <a href="terms.html">Nutzungsbedingungen</a>
+      </div>
+    </nav>
+    <main>
+      <div class="eyebrow">Private Infrastruktur · Google Drive OAuth</div>
+      <h1>Verschlüsselte Backups. Unter eigener Kontrolle.</h1>
+      <p class="lead">JARVIS Backup ist eine private, nicht öffentlich angebotene Backup-Konfiguration. Sie verwendet <strong>Restic</strong> für die Verschlüsselung von Datensicherungen und <strong>rclone</strong> für die Übertragung in das Google-Drive-Konto ihres Betreibers.</p>
+      <div class="panel">
+        <strong>Warum benötigt JARVIS Backup Google-Zugriff?</strong>
+        <p>Die Anwendung nutzt Google OAuth, um rclone für das Google-Drive-Konto des Betreibers zu autorisieren. So können verschlüsselte Sicherungsarchive hochgeladen und bei Bedarf wiederhergestellt werden. Es handelt sich nicht um einen Dienst für externe Nutzer.</p>
+        <a href="privacy.html">So werden Daten verarbeitet</a>
+      </div>
+      <div class="grid">
+        <section class="tile">
+          <h2>01 · Lokale Sicherung</h2>
+          <p>Die Quellsysteme erstellen Backup-Archive auf der eigenen Infrastruktur.</p>
+        </section>
+        <section class="tile">
+          <h2>02 · Verschlüsselung</h2>
+          <p>Restic verschlüsselt die Sicherungsdaten vor der Übertragung in die Cloud.</p>
+        </section>
+        <section class="tile">
+          <h2>03 · Offsite-Kopie</h2>
+          <p>rclone überträgt das verschlüsselte Repository in das persönliche Google Drive.</p>
+        </section>
+      </div>
+      <h2>Transparenz</h2>
+      <p>Die Website selbst benötigt weder eine Anmeldung noch eine Verbindung zum Google-Konto. Sie enthält keine Tracker, Formulare oder Skripte zur Erfassung von Besucherdaten. Details zur Verarbeitung von Google-Nutzerdaten durch die Backup-Konfiguration stehen in der <a href="privacy.html">Datenschutzerklärung</a>.</p>
+      <p class="small">Dies ist eine Informationsseite für ein privates Projekt und kein Angebot einer öffentlichen Backup-Dienstleistung.</p>
+    </main>
+    <footer>
+      <a href="privacy.html">Datenschutzerklärung</a>
+      <a href="terms.html">Nutzungsbedingungen</a>
+      <a href="https://github.com/FernGro">Projektbetreiber auf GitHub</a>
+    </footer>
+  </div>
+</body>
+</html>
